@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL Portfolio</title>
+
+    <link rel="shortcut icon" type="x-icon" href="favicon.jpg">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="home.html"> <i class="fas fa-home"></i> <span>home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
+    <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="image">
+        <img src="images/DLweb.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Hi, I am DL Gamoso</h3>
+        <p>A 20-year-old BSIT Student based in Ilocos Sur, Philippines.</p>
+        <span>BSIT Student of Ilocos Sur Polytechnic State College</span>
+        
+        <pre>
+        <a href="about.html">
+<button onclick="doSomething()" style="background-color:crimson;padding: 8px;color:#ffffff;border-radius:5px; font-size: 20px; font-family: 'Poppins', sans-serif;cursor:pointer;
+ animation:movedown 1s linear 1;animation-delay:0.5s;visibility:hidden;animation-fill-mode:forwards">  About Me  <i class="fas fa-user" style="font-size: 30apx" style='align-items:center;';></i>  </button>
+        </a>
+        <pre>
+        
+        <p id="test"></p>
+
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "";
+            }
+        </script>
+    </div>
+
+
+</section>
+
+<!-- home section ends -->
+
+</body>
+</html>
