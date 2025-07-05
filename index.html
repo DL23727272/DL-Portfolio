@@ -20,6 +20,12 @@
 
 </head>
 <body>
+<!-- Fullscreen Modal -->
+<div id="imageModal" class="custom-modal">
+  <span class="close-modal" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
     
 <!-- header section  -->
 
@@ -138,6 +144,7 @@
 
 <section class="portfolio">
 
+
     <h1 class="heading"> <span>my</span> awards </h1>
     
    <h1 style ="font-size: 40px"> <span style = "Color: White"></span></h1>
@@ -151,7 +158,9 @@
             <div class="content">
                 <h3>Award 01</h3>
                 <h3>participant</h3>
-                <p>Seminar Workshop on Basic Troubleshooting.</p>
+                <p style="font-size: 11px;" >Seminar Workshop on Basic Troubleshooting.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/1.jpg')">Preview</a>
+
             </div>
         </div>
         <div class="box">
@@ -159,9 +168,10 @@
             <div class="content">
                 <h3>Award 02</h3>
                 <h3>Champion</h3>
-                <p>
+                <p style="font-size: 11px;">
                     In recognition of Achieving Champion and Impressive Performance during CCS WEEK 2024 with a theme "Tech Fusion: Blending Boundaries and Igniting Possibilities".
-                   </p>
+                </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/2.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -169,9 +179,10 @@
             <div class="content">
                 <h3>Award 03</h3>
                 <h3>1st Place</h3>
-                <p>In recognition of Achieving 1st Place and Impressive Performance during CCS WEEK 2024 with a theme "Tech Fusion: Blending Boundaries and Igniting Possibilities".
+                <p style="font-size: 11px;">In recognition of Achieving 1st Place and Impressive Performance during CCS WEEK 2024 with a theme "Tech Fusion: Blending Boundaries and Igniting Possibilities".
 
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/3.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -179,7 +190,8 @@
             <div class="content">
                 <h3>Award 04</h3>
                 <h3>Finalist</h3>
-                <p> FINALIST - STUDENT CATEGORY during the SILLAG Startup Summit and Hackathon: Ilocos Sur Leg held on August 22-23, 2024 at Tadena Hall, University of Northern Philippines, Vigan City, Ilocos Sur.</p>
+                <p style="font-size: 11px;"> FINALIST - STUDENT CATEGORY during the SILLAG Startup Summit and Hackathon: Ilocos Sur Leg held on August 22-23, 2024 at Tadena Hall, University of Northern Philippines, Vigan City, Ilocos Sur.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/4.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -187,7 +199,8 @@
             <div class="content">
                 <h3>Award 05</h3>
                 <h3>International Student Exchange Awardee</h3>
-                <p style="font-size: 12px;">of the College of Computing Studies, in recognition of his exemplary performance, continuous hard work, untiring efforts, commitment and dedication towards quality education.</p>
+                <p style="font-size: 9px;">of the College of Computing Studies, in recognition of his exemplary performance, continuous hard work, untiring efforts, commitment and dedication towards quality education.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/5.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -195,7 +208,8 @@
             <div class="content">
                 <h3>Award 06</h3>
                 <h3>International Student Exchanged Program</h3>
-                <p style="font-size: 10px;">actively participation in the Course IT 105: Information Management under the International Student Exchanged Program of the Ilocos Sur Polytechnic State College, College of Computing Studies, Sta. Maria Campus and Politeknik Negeri Malang, Indonesia (POLINEMA) during the First Semester, Academic Year 2022-2023.</p>
+                <p style="font-size: 8px;">actively participation in the Course IT 105: Information Management under the International Student Exchanged Program of the Ilocos Sur Polytechnic State College, College of Computing Studies, Sta. Maria Campus and Politeknik Negeri Malang, Indonesia (POLINEMA) during the First Semester, Academic Year 2022-2023.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/6.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -203,8 +217,9 @@
             <div class="content">
                 <h3>Award 07</h3>
                 <h3>On-the-Job-Trainee (OJT)</h3>
-                <p>completed the 160 hours in service as On-the-Job Trainee in the Radyo Kailian 97.3 MHz FM at Ilocos Sur Polytechnic State
+                <p style="font-size: 11px;">completed the 160 hours in service as On-the-Job Trainee in the Radyo Kailian 97.3 MHz FM at Ilocos Sur Polytechnic State
                     College-Sta. Maria Campus.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/7.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -212,8 +227,9 @@
             <div class="content">
                 <h3>Award 08</h3>
                 <h3>International Student Exchanged Program</h3>
-                <p style="font-size: 10px;">actively participated in the Course EL2: Web Development: Front End under the International Student Exchange Program
+                <p style="font-size: 8px;">actively participated in the Course EL2: Web Development: Front End under the International Student Exchange Program
                     of the Ilocos Sur Polytechnic State College College of Computing Studies Sta. Maria Campus and Politeknik Negeri Malang, Indonesia (POLINEMA) during the First Semester, Academic Year 2022-2023.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/8.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -221,7 +237,8 @@
             <div class="content">
                 <h3>Award 09</h3>
                 <h3>Machine Learning</h3>
-                <p style="font-size: 15px;">attended the online seminar titled "TECHNOLOGY STACK" under the topic Machine Learning, conducted by the College of Computing Studies, Ilocos Sur Polytechnic State College - Sta. Maria Campus on April 19, 2025.</p>
+                <p style="font-size: 10px;">attended the online seminar titled "TECHNOLOGY STACK" under the topic Machine Learning, conducted by the College of Computing Studies, Ilocos Sur Polytechnic State College - Sta. Maria Campus on April 19, 2025.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/9.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -229,7 +246,8 @@
             <div class="content">
                 <h3>Award 10</h3>
                 <h3>Open Source NAT</h3>
-                <p style="font-size: 15px;">attended the online seminar titled "Technology Stack" under the topic Open Source NAT conducted by the College of Computing Studies, Ilocos Sur Polytechnic State College - Sta. Maria Campus on April 19, 2025.</p>
+                <p style="font-size: 10px;">attended the online seminar titled "Technology Stack" under the topic Open Source NAT conducted by the College of Computing Studies, Ilocos Sur Polytechnic State College - Sta. Maria Campus on April 19, 2025.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/10.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -237,7 +255,8 @@
             <div class="content">
                 <h3>Award 11</h3>
                 <h3>ReactJS</h3>
-                <p style="font-size: 15px;">attended the online seminar titled "Technology Stack" under the topic ReactJS conducted by the College of Computing Studies, Ilocos Sur Polytechnic State College - Sta. Maria Campus on April 19, 2025.</p>
+                <p style="font-size: 10px;">attended the online seminar titled "Technology Stack" under the topic ReactJS conducted by the College of Computing Studies, Ilocos Sur Polytechnic State College - Sta. Maria Campus on April 19, 2025.</p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/11.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -247,12 +266,13 @@
                 <h3>simplilearn SkillUP
                     CERTIFICATE OF
                     COMPLETION</h3>
-                <p style="font-size: 12px;">
+                <p style="font-size: 10px;">
                     successfully completed the online course:
                     Introduction to HTML
                     This professional has demonstrated initiative and a commitment to deepening their skills and
                     their career.
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/12.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -260,9 +280,10 @@
             <div class="content">
                 <h3>Award 13</h3>
                 <h3>Secure Data Privacy</h3>
-                <p style="font-size: 14px;">
+                <p style="font-size: 10px;">
                     attended the 4-hour Webinar on Upskilling in the 21st Century for Global Competitiveness with Secure Data Privacy by the DICT Region 2 conducted on February 8, 2025 from 8:00 AM to 12:00 PM Via Zoom Meeting Platform.
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/13.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -270,10 +291,11 @@
             <div class="content">
                 <h3>Award 14</h3>
                 <h3>Data Analytics for Smarter Decision-Making</h3>
-                <p style="font-size: 10px;">
+                <p style="font-size: 8px;">
                     successfully participating in the three (3) hour training program entitled Data Analytics for Smarter Decision-Making
                     conducted by the ICT Literacy and Competency Development Bureau through DICT Nueva Ecija held on February 22, 2025 via online conferencing.
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/14.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -281,9 +303,10 @@
             <div class="content">
                 <h3>Award 15</h3>
                 <h3>On-the-Job-Trainee (OJT)</h3>
-                <p style="font-size: 15px;">
+                <p style="font-size: 10px;">
                    Completed the 400 hours in service as On-the-Job Trainee in the MIS Office at Ilocos Sur Polytechnic State College - Main Campus.
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/15.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -291,10 +314,11 @@
             <div class="content">
                 <h3>Award 16</h3>
                 <h3>Champion</h3>
-                <p style="font-size: 11px;">
+                <p style="font-size: 10px;">
                    In recognition of Achieving CHAMPION and Impressive Performance during CCS WEEK 2025 with a theme "Tech Beyond Boundaries: Fusing Innovation, Sports, Culture, and 
                    IT Skills for a Dynamic Future". Your dedication, creativity, and teamwork have set a remarkable standard, demonstrating excellence in IT Skills WEB DESIGN CATEGORY.
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/16.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -302,10 +326,11 @@
             <div class="content">
                 <h3>Award 17</h3>
                 <h3>BS in Information Technology</h3>
-                <p style="font-size: 11px;">
+                <p style="font-size: 10px;">
                   A graduate of the BSIT-Web Development program at Ilocos Sur Polytechnic State College known now as  University of Ilocos Philippines (UIP). 
                   Also participated in an international exchange program at Politeknik Negeri Malang in Indonesia, completing two subjects.
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/17.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -316,11 +341,14 @@
                 <p style="font-size: 15px;">
                  participating the JAVA PROGRAMMING during the 12th I.T. Skills Olympics with a theme "The IT Innovators' Gauntlet: Forging Ahead the Future of Technology."
                 </p>
+                <a href="#" onclick="event.preventDefault(); openModal('Awards/18.jpg')">Preview</a>
             </div>
         </div>
 
         
     </div>
+
+
 
         
 </section>
@@ -633,7 +661,8 @@
             <div class="content">
                 <h3>Design 01</h3>
                 <p>using adobe illustrator</p>
-                <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a>
+                <!-- <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Y2k aim.jpg')">Preview</a>
             </div>
         </div>
        
@@ -642,7 +671,8 @@
             <div class="content">
                 <h3>Design 02</h3>
                 <p>using adobe illustrator</p>
-                <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a>
+                <!-- <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/y2k chog.jpg')">Preview</a>
             </div>
         </div>
 
@@ -651,7 +681,8 @@
             <div class="content">
                 <h3>Design 03</h3>
                 <p>using adobe illustrator</p>
-                <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a>
+                <!-- <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/asters.jpg')">Preview</a>
                 
             </div>
         </div>
@@ -661,7 +692,8 @@
             <div class="content">
                 <h3>Design 04</h3>
                 <p>using adobe illustrator</p>
-                <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a>
+                <!-- <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Y2k Love.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -669,7 +701,8 @@
             <div class="content">
                 <h3>Design 05</h3>
                 <p>using adobe illustrator</p>
-                <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a>
+                <!-- <a href="https://drive.google.com/drive/folders/17h0tT5LjBLn8OifLcNxhcCFDLHVMehRD?usp=sharing" target="_blank">Open Portfolio</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/dart.jpg')">Preview</a>
             </div>
         </div>
 
@@ -685,8 +718,9 @@
             <div class="content">
                 <h3>Banner 01</h3>
                 <p></p>
-                <a href="https://drive.google.com/file/d/1jMyjsDntv1g--QTlgUjnTMnVp6D5mpq4/view?usp=share_link" 
-                target="_blank">Preview Banner</a>
+                <!-- <a href="https://drive.google.com/file/d/1jMyjsDntv1g--QTlgUjnTMnVp6D5mpq4/view?usp=share_link" 
+                target="_blank">Preview Banner</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Banner-1.jpg')">Preview</a>
             </div>
         </div>
        
@@ -695,8 +729,9 @@
             <div class="content">
                 <h3>banner 02</h3>
                 <p></p>
-                <a href="https://drive.google.com/file/d/1624h6xcSs1VihAl2zN89ijyNk1XIkbzJ/view?usp=share_link" 
-                target="_blank">Preview Banner</a>
+                <!-- <a href="https://drive.google.com/file/d/1624h6xcSs1VihAl2zN89ijyNk1XIkbzJ/view?usp=share_link" 
+                target="_blank">Preview Banner</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Banner-2.jpg')">Preview</a>
             </div>
         </div>
 
@@ -705,8 +740,9 @@
             <div class="content">
                 <h3>banner 03</h3>
                 <p></p>
-                <a href="https://drive.google.com/file/d/1qZlfFHSNVRDaOCsIqIQ1r7mZM9BM8M5p/view?usp=share_link" 
-                target="_blank">Preview Banner</a>
+                <!-- <a href="https://drive.google.com/file/d/1qZlfFHSNVRDaOCsIqIQ1r7mZM9BM8M5p/view?usp=share_link" 
+                target="_blank">Preview Banner</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Banner-3.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -714,8 +750,9 @@
             <div class="content">
                 <h3>banner 04</h3>
                 <p></p>
-                <a href="https://drive.google.com/file/d/1DeFCwEyI-o98LuzQHxkjzXWjCJdSX9p0/view?usp=sharing" 
-                target="_blank">Preview Banner</a>
+                <!-- <a href="https://drive.google.com/file/d/1DeFCwEyI-o98LuzQHxkjzXWjCJdSX9p0/view?usp=sharing" 
+                target="_blank">Preview Banner</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Banner-4.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -723,8 +760,9 @@
             <div class="content">
                 <h3>banner 05</h3>
                 <p></p>
-                <a href="https://drive.google.com/file/d/1qtE7ep0nVqxOspBV2kiomoVtDFowL8oX/view?usp=sharing" 
-                target="_blank">Preview Banner</a>
+                <!-- <a href="https://drive.google.com/file/d/1qtE7ep0nVqxOspBV2kiomoVtDFowL8oX/view?usp=sharing" 
+                target="_blank">Preview Banner</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Banner-5.jpg')">Preview</a>
             </div>
         </div>
 
@@ -739,8 +777,9 @@
             <div class="content">
                 <h3>Poster 01</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
-                target="_blank">Preview Poster</a>
+                <!-- <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
+                target="_blank">Preview Poster</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Poster-1.jpg')">Preview Poster</a>
             </div>
         </div>
        
@@ -749,8 +788,9 @@
             <div class="content">
                 <h3>Poster 02</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
-                target="_blank">Preview Poster</a>
+                <!-- <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
+                target="_blank">Preview Poster</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Poster-2.jpg')">Preview Poster</a>
             </div>
         </div>
 
@@ -759,8 +799,9 @@
             <div class="content">
                 <h3>Poster 03</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
-                target="_blank">Preview Poster</a>
+                <!-- <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
+                target="_blank">Preview Poster</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Poster-3.jpg')">Preview Poster</a>
             </div>
         </div>
         <div class="box">
@@ -768,8 +809,9 @@
             <div class="content">
                 <h3>Poster 04</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
-                target="_blank">Preview Poster</a>
+                <!-- <a href="https://drive.google.com/drive/folders/1Me8FxH7bwaKysUxvSpUFkUOVM_eB4BZG?usp=sharing" 
+                target="_blank">Preview Poster</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Poster-4.png')">Preview Poster</a>
             </div>
         </div>
 
@@ -784,9 +826,9 @@
             <div class="content">
                 <h3>Shirt Designs 01</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
-                
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/DTB.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -794,9 +836,9 @@
             <div class="content">
                 <h3>Shirt Designs 02</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
-                
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                 <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/Eminem.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -804,9 +846,9 @@
             <div class="content">
                 <h3>Shirt Designs 03</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
-                
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/Frank.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -814,9 +856,9 @@
             <div class="content">
                 <h3>Shirt Designs 04</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
-                
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/Rodman.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -824,9 +866,9 @@
             <div class="content">
                 <h3>Shirt Designs 05</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
-                
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/Tupac.jpg')">Preview</a>
             </div>
         </div>
         <div class="box">
@@ -834,8 +876,9 @@
             <div class="content">
                 <h3>Shirt Designs 06</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/YoungBoy.jpg')">Preview</a>
                 
             </div>
         </div>
@@ -844,8 +887,9 @@
             <div class="content">
                 <h3>Shirt Designs 07</h3>
                 <p></p>
-                <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
-                target="_blank">Preview Designs</a>
+                <!-- <a href="https://drive.google.com/drive/folders/1AFpFMYfsK9UQ02ADl_PJbVB6ZVSvZoMD?usp=share_link" 
+                target="_blank">Preview Designs</a> -->
+                <a href="#" onclick="event.preventDefault(); openModal('images/Shirts/jake.jpg')">Preview</a>
                 
             </div>
         </div>
@@ -863,6 +907,7 @@
                 <p></p>
                 <a href="https://youtu.be/wcuh0HCBkjA?si=d_7qb-9sakl9_EZg" 
                 target="_blank">Play Music</a>
+                <a href="#" onclick="event.preventDefault(); openModal('images/hoe.png')">Preview</a>
                 
             </div>
         </div>
@@ -876,8 +921,7 @@
 <!-- contact section starts  -->
 
 <section class="contact">
-  
- 
+
 <h1 class="heading"> contact <span>me</span> </h1>
 
 <div class="row">
@@ -917,14 +961,13 @@
         </div>
 
         <div class="share">
-            <a href="https://www.facebook.com/DLuvvsssU" target="_blank" class="fab fa-facebook-f"> </a>
+            <a href="https://www.facebook.com/profile.php?id=61577904007950" target="_blank" class="fab fa-facebook-f"> </a>
             <a href="https://www.instagram.com/dl.vsls/" target="_blank" class="fab fa-instagram"></a>
         </div>
 
     </div>
 
    
-
 </div>
 
 </section>
@@ -937,116 +980,9 @@
     <h1>*******</h1>
   </div>
 </form>
-<script data-cfasync="false" type="text/javascript">
-  
- (function() {
-function validEmail(email) {
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
-}
 
-function validateHuman(honeypot) {
-  if (honeypot) {
-    console.log("Robot Detected!");
-    return true;
-  } else {
-    console.log("Welcome Human!");
-  }
-}
-function getFormData(form) {
-  var elements = form.elements;
+<script src="js/main.js"></script>
 
-  var fields = Object.keys(elements).filter(function(k) {
-        return (elements[k].name !== "honeypot");
-  }).map(function(k) {
-    if(elements[k].name !== undefined) {
-      return elements[k].name;
-    }else if(elements[k].length > 0){
-      return elements[k].item(0).name;
-    }
-  }).filter(function(item, pos, self) {
-    return self.indexOf(item) == pos && item;
-  });
-
-  var formData = {};
-  fields.forEach(function(name){
-    var element = elements[name];
-    formData[name] = element.value;
-    if (element.length) {
-      var data = [];
-      for (var i = 0; i < element.length; i++) {
-        var item = element.item(i);
-        if (item.checked || item.selected) {
-          data.push(item.value);
-        }
-      }
-      formData[name] = data.join(', ');
-    }
-  });
-
-  // add form-specific values into the data
-  formData.formDataNameOrder = JSON.stringify(fields);
-  formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
-  formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-
-  console.log(formData);
-  return formData;
-}
-
-function handleFormSubmit(event) {  
-  event.preventDefault();           
-  var form = event.target;
-  var data = getFormData(form);         
-  if( data.email && !validEmail(data.email) ) {   
-    var invalidEmail = form.querySelector(".email-invalid");
-    if (invalidEmail) {
-      invalidEmail.style.display = "block";
-      return false;
-    }
-  } else {
-    disableAllButtons(form);
-    var url = form.action;
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-        console.log(xhr.status, xhr.statusText);
-        console.log(xhr.responseText);
-        var formElements = form.querySelector(".form-elements")
-        if (formElements) {
-          formElements.style.display = "none"; // hide form
-        }
-        var thankYouMessage = form.querySelector(".thankyou_message");
-        if (thankYouMessage) {
-          thankYouMessage.style.display = "block";
-        }
-        return;
-    };
-    var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-    }).join('&');
-    xhr.send(encoded);
-  }
-}
-
-function loaded() {
-  console.log("Contact form submission handler loaded successfully.");
-  var forms = document.querySelectorAll("form.gform");
-  for (var i = 0; i < forms.length; i++) {
-    forms[i].addEventListener("submit", handleFormSubmit, false);
-  }
-};
-document.addEventListener("DOMContentLoaded", loaded, false);
-
-function disableAllButtons(form) {
-  var buttons = form.querySelectorAll("button");
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].disabled = true;
-  }
-}
-})();
-
-</script>
 
 
 </body>
