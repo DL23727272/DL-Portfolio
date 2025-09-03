@@ -14,6 +14,8 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 <body>
@@ -78,6 +80,22 @@
 
     </div>
 
+    
+   <form id="contactForm" method="POST">
+        <div class="inputBox">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="number" name="number" placeholder="Your Number">
+        </div>
+
+        <div class="inputBox">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Your Subject">
+        </div>
+
+        <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+
+        <input type="submit" value="send message" class="btn">
+    </form>
    
 </div>
 
@@ -85,14 +103,8 @@
 
 <!-- contact section ends -->
 
-<!--Thank You Section-->
-<div class="thankyou_message" style="display:none;background:none;border:8px solid gray;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
-    <h1>Thanks for contacting us!</h1>
-    <h1>*******</h1>
-  </div>
-</form>
 
-
+<script src="js/contact.js"></script>
 </body>
 </html>
 </body>
