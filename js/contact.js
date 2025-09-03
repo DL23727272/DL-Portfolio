@@ -1,42 +1,42 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contactForm");
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    form.addEventListener("submit", async (e) => {
-        e.preventDefault(); // stop normal form submit
+    let formData = new FormData(this);
+    const sendBtn = document.getElementById("sendBtn");
 
-        const formData = new FormData(form);
+    sendBtn.disabled = true;
+    sendBtn.innerHTML = `Sending...<i class="fas fa-spinner fa-spin"></i> `;
 
-        try {
-            const response = await fetch("sendMail.php", {
-                method: "POST",
-                body: formData
+    fetch("sendMail.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "success") {
+            Swal.fire({
+                icon: "success",
+                title: "Message Sent!",
+                text: "Thank you for contacting me. I’ll get back to you soon."
             });
-
-            const result = await response.json();
-
-            if (result.status === "success") {
-                Swal.fire({
-                    icon: "success",
-                    title: "Message Sent!",
-                    text: "Thanks, I will reply soon.",
-                    confirmButtonColor: "#3085d6"
-                });
-                form.reset();
-            } else {
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: result.message,
-                    confirmButtonColor: "#d33"
-                });
-            }
-        } catch (error) {
+            document.getElementById("contactForm").reset();
+        } else {
             Swal.fire({
                 icon: "error",
-                title: "Server Error",
-                text: "Something went wrong. Please try again later.",
-                confirmButtonColor: "#d33"
+                title: "Oops...",
+                text: data.message
             });
         }
+    })
+    .catch(() => {
+        Swal.fire({
+            icon: "error",
+            title: "Server Error",
+            text: "Something went wrong. Please try again later."
+        });
+    })
+    .finally(() => {
+        sendBtn.disabled = false;
+        sendBtn.innerHTML = `Send Message <i class="fas fa-paper-plane"></i>`;
     });
 });
