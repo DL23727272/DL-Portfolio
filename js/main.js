@@ -11,7 +11,7 @@
       document.getElementById('imageModal').style.display = "none";
     }
 
-    // Optional: Close modal when clicking outside image
+
     window.onclick = function(event) {
       const modal = document.getElementById('imageModal');
       if (event.target == modal) {

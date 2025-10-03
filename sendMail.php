@@ -21,15 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.hostinger.com';  
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'support@ispsc-clinic.personatab.com';  
-        $mail->Password   = 'dlGamoso23_';    
+        $mail->Username   = 'support@dlportfolio.personatab.com';  
+        $mail->Password   = 'SupportDLvisuals25_';    
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Recipients
-        $mail->setFrom('support@ispsc-clinic.personatab.com', 'DL Portfolio');
-        $mail->addAddress('support@ispsc-clinic.personatab.com'); 
-        $mail->addAddress('gamosodl@gmail.com');
+        $mail->setFrom('support@dlportfolio.personatab.com', 'DL Portfolio');
+        $mail->addAddress('support@dlportfolio.personatab.com'); 
+        $mail->addAddress('dldoesvisuals@gmail.com');
 
         // Content
         $mail->isHTML(true);
